@@ -8,7 +8,7 @@ namespace BinaryTrees.Tests
 
         }
 
-        [Test]
+       // [Test]
         public void InsertInTrees()
         {
             BinaryTrees.SimpleTrees simpleTrees = new BinaryTrees.SimpleTrees(10);
@@ -21,7 +21,7 @@ namespace BinaryTrees.Tests
             Assert.AreEqual(simpleTrees.Root.Right.Right.Key, 14);
             Assert.AreEqual(simpleTrees.Root.Right.Left.Key, 11);
         }
-        [Test]
+        //[Test]
         public void SearchInTrees()
         {
 
