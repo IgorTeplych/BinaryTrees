@@ -116,20 +116,31 @@ namespace BinaryTrees
 
             if (node.Key == x)
             {
+                if(node.Left == null && node.Right == null)
+                {
+                    ClearParrent(node);
+                    return;
+                }
+
                 Node node1 = node.Right;
                 Node node2 = node.Left;
                 Node _root = node.Parrent;
 
-                if (node.Key < node.Parrent.Key)
-                    node.Parrent.Left = null;
-                else
-                    node.Parrent.Right = null;
+                ClearParrent(node);
 
                 node = null;
 
                 Insert(node1, _root);
                 Insert(node2, _root);
             }
+        }
+
+        void ClearParrent(Node node)
+        {
+            if (node.Key < node.Parrent.Key)
+                node.Parrent.Left = null;
+            else
+                node.Parrent.Right = null;
         }
     }
 }
