@@ -1,6 +1,6 @@
 namespace BinaryTrees.Tests
 {
-    public class Tests
+    public class TeSimpleTreesTestssts
     {
         [SetUp]
         public void Setup()
