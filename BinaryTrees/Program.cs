@@ -134,6 +134,15 @@ static class Programm
         }
         sw.Stop();
         Console.WriteLine($"Поиск в сбалансированном АВЛ дереве {N / 10} случайных чисел занимает: {sw.ElapsedTicks * 100} нс.");
+
+        sw = new Stopwatch();
+        sw.Start();
+        for (int i = 0; i < N / 10; i++)
+        {
+            aVLTrees.Remove(random.Next(0, N));
+        }
+        sw.Stop();
+        Console.WriteLine($"Удаление в сбалансированном АВЛ дереве {N / 10} случайных чисел занимает: {sw.ElapsedTicks * 100} нс.");
     }
     static void AVLNonOrderedAndBalance()
     {
@@ -186,6 +195,15 @@ static class Programm
         }
         sw.Stop();
         Console.WriteLine($"Поиск в сбалансированном АВЛ дереве {N / 10} случайных чисел занимает: {sw.ElapsedTicks * 100} нс.");
+
+        sw = new Stopwatch();
+        sw.Start();
+        for (int i = 0; i < N / 10; i++)
+        {
+            aVLTrees.Remove(random.Next(0, N));
+        }
+        sw.Stop();
+        Console.WriteLine($"Удаление в сбалансированном АВЛ дереве {N / 10} случайных чисел занимает: {sw.ElapsedTicks * 100} нс.");
     }
 
 
