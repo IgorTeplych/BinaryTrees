@@ -127,8 +127,10 @@ namespace BinaryTrees
 
                 node = null;
 
-                Insert(node1, _root);
-                Insert(node2, _root);
+                if (node1 != null)
+                    Insert(node1, _root);
+                if (node2 != null)
+                    Insert(node2, _root);
             }
         }
     }
